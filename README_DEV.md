@@ -1,29 +1,16 @@
-# 5G-OMLOX_NotHalt - Development
-
-developing the basic button-LED communication on branch develop
-
-developing the button-LED communication over openSafety on branch openSafety
-
-git checkout openSafety
-
-make changes in code
-
-git push --set-upstream origin openSafety
-
-creating tests on branch testing
-
+# 5G-OPCUA Server-Client - Development
 
 ## Configuration of the Raspberry Pis
 
-### Device 01 (+Switch)
+### Device 01
 Name Server 
 IP:- 192.168.1.10
 
-### Device 02 (+LED)
+### Device 02
 Name Client
 IP:- 192.168.1.12
 
-Ping test done sucessfully
+$Ping test done sucessfully
 Server and client communication tested with 2 devices
 sucessfully sent and received string.
 
@@ -55,24 +42,15 @@ Test the installaion with
 `dotnet --version`
 
 Build and run the project with the following commands
-
-#[ TODO #1 -Viki]
-`cd ..?`
-
-`dotnet ..`
-
-`dotnet ..`
-
-After cloning / pulling the repo, the dll files should be deleted --> TODO #2 .gitignore these files to avoid uploading them to the repo.
-On a Raspberrypi the path to the projects (Server/Client) shoud be granted permissions
-`sudo chmod -R 757 '/home/pi/...'`
-
-in the path of every project, restore, build and run the project
-`dotnet restore`
+`cd OPC-Server`
 
 `dotnet build`
 
 `dotnet run`
+
+After cloning / pulling the repo, the dll files should be deleted -->
+On a Raspberrypi the path to the projects (Server/Client) shoud be granted permissions
+`sudo chmod -R 757 '/home/pi/...'`
 
 ### Step 3 - The electrical circuit
 connect the circuit correctly to the GPIOs. 
