@@ -4,7 +4,7 @@ The future of industrial production lies in Industry 4.0, the intelligent factor
 
 The main focus of this project  is divided into following parts 
 1) To monitor and control server systems over 5G network using OPC UA protocol 
-2) Testing the latency over a long range.
+2) Testing the latency over long range.
 3) PoC for dual channel in a 5G moderm for redundancy in network.
 
 
