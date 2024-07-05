@@ -1,4 +1,5 @@
 # **5G for Industrial Internet of Things (IIoT)**
+
 ## Project Overview
 The future of industrial production lies in Industry 4.0, the intelligent factory, and the Industrial Internet of Things (IIoT). To enhance the flexibility, autonomy, and efficiency of production facilities and intralogistics, a robust framework for communication and thorough connectivity is essential. The development of the 5G communication standard offers significant new perspectives in this domain.
 
@@ -12,14 +13,16 @@ The scope of this project is to build and analyze the OPC-UA communication with 
 * Latency Testing: Evaluate and test the latency over long-range 5G communication.
 * Proof of Concept: Demonstrate the dual-channel setup in a 5G modem to achieve redundancy in the network.
 
+
 ## Table of Contents
-1.  Installation
-2.  Usage
-3.  Features
-4.  Testing
-5.  Contributing
-6.  License
-7.  Acknowledgements
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Features][#Features]
+4. [Testing][#Testing]
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Acknowledgements](#acknowledgements)
+
 
 ## Installation
 ### Prerequisites
