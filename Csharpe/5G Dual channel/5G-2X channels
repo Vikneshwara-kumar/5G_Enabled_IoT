@@ -1,0 +1,74 @@
+### The below code and comments will help us out to configure a Dual channel communication over 5G.
+
+> To use network bonding in Ubuntu or Debian-based Linux systems, we must first install the bonding kernel module and use the command modprobe to see if the bonding driver is loaded or not.
+
+```
+sudo modprobe bonding
+```
+
+> If you have an older version of Debian or Ubuntu then we should install ifenslave package. With the below command.
+
+```
+sudo apt-get install ifenslave
+```
+
+> Run the below command to access the GUI
+
+```
+sudo nano /etc/network/interfaces
+```
+
+In the GUI copy paste the below command and save it. Then exit it.
+
+### The primary network interfaces
+```
+auto bond0
+iface bond0 inet static
+	address 192.168.241.50
+	netmask 255.255.255.248
+		slaves wwan0 wwan1
+		bond_mode 0
+		bond-miimon 100
+		bond_downdelay 200
+		bond_updelay 200
+```
+    
+Different mode as different functionality. Select the mode depending on your requirement.
+*	mode=0 (balance-rr)
+*	mode=1 (active backup)
+*	mode=2 (balance-xor)
+*	mode=3 (broadcast)
+*	mode=4 (802.3ad)
+*	mode=5 (balance-tlb)
+*	mode=6 (balance-alb)
+
+> Now restart the network services or reboot the system (rebooting the system is recommended)
+
+```
+sudo systemctl restart networking.service
+```
+
+> Run the below command to check and verify the bonding interface
+
+```
+ifconfig 
+```
+
+> Now install nload which is used to monitor the network functionality.
+
+```
+sudo apt install nload
+```
+
+> This below command will open the monitoring page for wwan0
+
+```
+nload wwan0
+```
+
+> This below command will open the monitoring page for wwan1
+
+```
+nload wwan1
+```
+
