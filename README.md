@@ -17,8 +17,8 @@ The scope of this project is to build and analyze the OPC-UA communication with 
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Features][#Features]
-4. [Testing][#Testing]
+3. [Features](#Features)
+4. [Testing](#Testing)
 5. [Contributing](#contributing)
 6. [License](#license)
 7. [Acknowledgements](#acknowledgements)
